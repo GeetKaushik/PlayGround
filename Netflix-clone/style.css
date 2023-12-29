@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;900&display=swap");
+
+:root {
+	--grey: #2d2d2d;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "Martel Sans", sans-serif;
+	color: white;
+}
+
+body {
+	background-color: black;
+}
+
+.hero {
+	background-image: url("https://assets.nflxext.com/ffe/siteui/vlv3/c31c3123-3df7-4359-8b8c-475bd2d9925d/15feb590-3d73-45e9-9e4a-2eb334c83921/IN-en-20231225-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	height: 86vh;
+	position: relative;
+	background-size: max(1920px, 100vw);
+}
+
+.hero .shade {
+	background-color: #000000;
+	position: absolute;
+	top: 0;
+	opacity: 0.66;
+	height: 86vh;
+	width: 100%;
+}
+
+nav {
+	max-width: 70vw;
+	justify-content: space-between;
+	padding: 20px 48px;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	height: 64px;
+}
+
+nav img {
+	width: 150px;
+	position: relative;
+	z-index: 10;
+}
+
+nav button {
+	position: relative;
+	/* z-index: 10; */
+}
+
+.wordbox1 {
+	font-family: "Martel Sans", sans-serif;
+	color: white;
+	height: 75%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* gap: 10px; */
+	position: relative;
+	z-index: 10;
+	padding: 30px;
+	text-align: center;
+}
+
+.wordbox1 h1 {
+	font-size: 48px;
+}
+
+.wordbox1 h2 {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.wordbox1 h4 {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 60px;
+}
+
+.sepration {
+	background-color: var(--grey);
+	height: 1vh;
+}
+
+.top-right-btn {
+	display: flex;
+	gap: 1.4vw;
+}
+
+.language {
+	background-color: rgba(20, 20, 20, 0.3);
+	border-radius: 4px;
+	border: 1px solid rgba(150, 150, 150, 0.66);
+	color: white;
+	font-size: 14px;
+	/* padding: 3px 15px; */
+	font-weight: 600;
+	border-radius: 4px;
+}
+.language select {
+	background-color: rgba(20, 20, 20, 0.3);
+	border: none;
+	color: white;
+	padding: 4px 36px;
+}
+
+.red-btn {
+	/* display: flex; */
+	font-size: 14px;
+	padding: 4px 15px;
+	font-weight: 600;
+	color: white;
+	background-color: red;
+	border-radius: 4px;
+	border: none;
+}
+
+.large-red-btn {
+	font-size: 24px;
+	color: white;
+	padding: 5px 20px;
+	font-weight: 600;
+	background-color: red;
+	border-radius: 4px;
+	border: none;
+}
+
+.input-box {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+}
+
+.input-box input {
+	background-color: rgba(20, 20, 20, 0.66);
+	color: white;
+	font-size: 16px;
+	padding: 13px 124px 13px 10px;
+	font-weight: 600;
+	border-radius: 4px;
+	border-style: ridge;
+	line-height: 24px;
+}
+
+.features {
+	padding: 3rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 85vw;
+	margin: auto;
+	flex-wrap: wrap;
+}
+
+.features img {
+	width: 40vw;
+}
+
+.wordbox2 {
+	width: 600px;
+}
+.wordbox2 h1 {
+	font-size: 48px;
+	font-weight: 900;
+}
+
+.wordbox2 p {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.vidimg1,
+.vidimg2 {
+	position: relative;
+}
+
+.vidimg1 img {
+	width: 40vw;
+	position: relative;
+	z-index: 10;
+}
+
+.vidimg1 video {
+	width: 32vw;
+	position: absolute;
+	top: 10vh;
+	left: 5vw;
+}
+
+.vidimg2 img {
+	width: 40vw;
+	position: relative;
+	z-index: 10;
+}
+
+.vidimg2 video {
+	width: 24vw;
+	position: absolute;
+	top: 6vh;
+	left: 8vw;
+}
+.faqs {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.faqbox {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+}
+
+.faqcard {
+	background-color: var(--grey);
+	padding: 1.3rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 75vw;
+	cursor: pointer;
+}
+
+.faqcard:hover {
+	transition: all 100ms ease-out;
+	background-color: #414141;
+}
+
+.faqcard span {
+	font-size: 24px;
+}
+
+.faqs h1 {
+	font-size: 48px;
+	padding-top: 5rem;
+	justify-self: center;
+	text-align: center;
+}
+
+footer {
+	margin: 5vw;
+}
+
+.footer-box {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+footer div,
+span {
+	font-size: 16px;
+	color: rgba(255, 255, 255, 0.7);
+	padding: 5px 0;
+}
+
+footer span {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.footer-box a {
+	font-size: 14px;
+	color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-coloumn {
+	display: flex;
+	flex-direction: column;
+	gap: 2vh;
+}
+
+.space {
+	height: 10vh;
+}
